@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Trang chủ | G2 Store</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/index-style.css">
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="website icon" type="png" href="source/G2_logo.png">
+</head>
+
+<body>
+	<!------------HEADER------------->
+	
+
+
+
+
+		<header>
+			<div class="container">
+				<div class="hotline">
+					<span>HOTLINE:</span>
+					<a href="">0926111220</a>
+				</div>
+				<div class="header-logo">
+					<a href="index.html">
+						<img src="source/G2_logo.png" alt="">
+					</a>
+				</div>
+				<div class="header-left">
+					<ul>
+						<li>
+							<a href="login.html" title="Tài khoản">
+								Tài khoản
+								<span class="material-symbols-sharp">
+									person </span>
+							</a>
+							<ul>
+								<li>
+									<a href="login.html">Đăng nhập</a>
+								</li>
+								<li>
+									<a href="RegisterAccount.html">Đăng ký</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="cart.html" title="Giỏ hàng">Giỏ hàng
+								<span class="material-symbols-outlined">
+									shopping_cart </span>
+							</a>
+							<ul>
+								<li>
+									<a href="">GIỎ HÀNG CỦA BẠN ĐANG TRỐNG</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="listproduct.html" title="Mở trang tìm kiếm sản phẩm">
+								<span class="material-symbols-outlined search-icon">
+									search
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<nav class="container_nav">
+				<ul>
+					<li title="Trang chủ">
+						<a href="index.html" title="Trang chủ">Trang chủ</a>
+					</li>
+					<li title="Chelsea Boots">
+						<a href="listproduct.html" class="nav-link" title="Chelsea boots">Chelsea boots
+							<i class="fa fa-angle-down" data-toggle="dropdown"></i>
+						</a>
+						<ul>
+							<li>
+								<a href="">GLV</a>
+							</li>
+							<li>
+								<a href="">MANZA</a>
+							</li>
+							<li>
+								<a href="">LUCA</a>
+							</li>
+						</ul>
+					</li>
+					<li title="Combat Boots">
+						<a href="listproduct.html" title="Combat boots">Combat boots
+							<i class="fa fa-angle-down" data-toggle="dropdown"></i>
+						</a>
+						<ul>
+							<li>
+								<a href="">ĐẾ CHUNKY</a>
+							</li>
+							<li>
+								<a href="">Da mềm</a>
+							</li>
+							<li>
+								<a href="">Guza</a>
+							</li>
+							<li>
+								<a href="">Botas</a>
+							</li>
+						</ul>
+					</li>
+					<li title="Office Shoes">
+						<a href="listproduct.html" title="Office shoes">Office shoes
+							<i class="fa fa-angle-down" data-toggle="dropdown"></i>
+						</a>
+						<ul>
+							<li>
+								<a href="">LOAFER</a>
+							</li>
+							<li>
+								<a href="">CHUNKY</a>
+							</li>
+							<li>
+								<a href="">DERBY</a>
+							</li>
+						</ul>
+					</li>
+					<li title="Sneaker">
+						<a href="listproduct.html" title="Sneaker">Sneaker</a>
+					</li>
+					<li title="Cửa hàng">
+						<a href="" title="Cửa hàng">Cửa hàng</a>
+					</li>
+					<li title="Blog">
+						<a href="" title="Blog">Blog</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!------------CONTENT------------->
+		<!------------Slider------------->
+		<section class="section-1_slider">
+			<div class="slider">
+				<div class="slide">
+					<img src="source/slider/1.png" alt="" id="slider-img">
+				</div>
+			</div>
+			<div class="nav-slider">
+				<span class="material-symbols-outlined prev-btn" onclick="prev()"> chevron_left </span>
+				<span class="material-symbols-outlined next-btn" onclick="next()"> chevron_right </span>
+			</div>
+			<div class="slider-button">
+				<div class="dot active" aria-label="Page dot 1"></div>
+				<div class="dot" aria-label="Page dot 2"></div>
+				<div class="dot" aria-label="Page dot 3"></div>
+				<div class="dot" aria-label="Page dot 4"></div>
+				<div class="dot" aria-label="Page dot 5"></div>
+			</div>
+
+			<script>
+				// Tạo list banner
+				var arr_hinh = [
+					"source/slider/1.png",
+					"source/slider/2.jpg",
+					"source/slider/3.jpg",
+					"source/slider/4.jpg",
+				]
+				var slideNumber = 0;
+				// Chức năng lùi
+				function prev() {
+					slideNumber--;
+					if (slideNumber < -0) slideNumber = 3;
+					document.getElementById("slider-img").src = arr_hinh[slideNumber];
+				}
+				// Chức năng tiến
+				function next() {
+					slideNumber++;
+					if (slideNumber == arr_hinh.length) slideNumber = 0;
+					document.getElementById("slider-img").src = arr_hinh[slideNumber];
+				}
+			</script>
+
+		</section>
+		<!-----Sản phẩm bán chạy nhất----->
+		<section id="section-best_seller">
+			<h1><a>SẢN PHẨM BÁN CHẠY NHẤT</a></h1>
+			<div class="card-container">
+				<a class="card-link" href="detailproduct.html" id="best-seller-1">
+					<div class="card">
+						<div class="card-img">
+							<img src="source/ảnh bìa sản phẩm/Chunky Derby.jpg">
+							<img src="source/ảnh/Luca/DSC09240.png.jpg" class="hover-img">
+						</div>
+						<div class="card-more_imgs">
+							<img src="source/ảnh/Luca/DSC09844.jpg">
+							<img src="source/ảnh/Luca/DSC09805.jpg">
+							<img src="source/ảnh/Luca/DSC09807.jpg">
+						</div>
+						<div class="card-catalog">
+							<h5>CHELSEA BOOTS</h5>
+						</div>
+						<div class="card-product_title">
+							<h2>LUCA</h2>
+						</div>
+						<div class="card-price">
+							<h3>789.000 đ</h3>
+						</div>
+						<div class="card-action">
+							<button class="card-action-button">Xem thêm</button>
+						</div>
+					</div>
+				</a>
+				<a class="card-link" href="detailproduct.html" id="best-seller-2">
+					<div class="card">
+						<div class="card-img">
+							<img src="source/ảnh bìa sản phẩm/GLV.jpg">
+							<img src="source/ảnh/GLV Man update/DSC00532.jpg" class="hover-img">
+						</div>
+						<div class="card-more_imgs">
+							<img src="source/ảnh/GLV Man update/DSC00586.jpg">
+							<img src="source/ảnh/GLV Man update/DSC00543.jpg">
+							<img src="source/ảnh/GLV/DSC08828.jpg">
+						</div>
+						<div class="card-catalog">
+							<h5>CHELSEA BOOTS</h5>
+						</div>
+						<div class="card-product_title">
+							<h2>GLV</h2>
+						</div>
+						<div class="card-price">
+							<h3>699.000 đ</h3>
+						</div>
+						<div class="card-action">
+							<button class="card-action-button">Xem thêm</button>
+						</div>
+					</div>
+				</a>
+				<a class="card-link" href="detailproduct.html" id="best-seller-3">
+					<div class="card">
+						<div class="card-img">
+							<img src="source/ảnh bìa sản phẩm/Manza.jpg">
+							<img src="source/ảnh/GLV Man update/DSC00577.jpg" class="hover-img">
+						</div>
+						<div class="card-more_imgs">
+							<img src="source/ảnh/Manza/DSC08415.jpg">
+							<img src="source/ảnh/Manza/DSC08417.jpg">
+							<img src="source/ảnh/Manza/DSC08430.jpg">
+						</div>
+						<div class="card-catalog">
+							<h5>CHELSEA BOOTS</h5>
+						</div>
+						<div class="card-product_title">
+							<h2>MANZA</h2>
+						</div>
+						<div class="card-price">
+							<h3>699.000 đ</h3>
+						</div>
+						<div class="card-action">
+							<button class="card-action-button">Xem thêm</button>
+						</div>
+					</div>
+				</a>
+				<a class="card-link" href="detailproduct.html" id="best-seller-4">
+					<div class="card">
+						<div class="card-img">
+							<img src="source/ảnh bìa sản phẩm/363.jpg">
+							<img src="source/ảnh/363/DSC00174.jpg" class="hover-img">
+						</div>
+						<div class="card-more_imgs">
+							<img src="source/ảnh/363/DSC00182.jpg">
+							<img src="source/ảnh/363/DSC00192.jpg">
+							<img src="source/ảnh/363/DSC00209.jpg">
+						</div>
+						<div class="card-catalog">
+							<h5>COMBAT BOOTS</h5>
+						</div>
+						<div class="card-product_title">
+							<h2>DA MỀM</h2>
+						</div>
+						<div class="card-price">
+							<h3>599.000 đ</h3>
+						</div>
+						<div class="card-action">
+							<button class="card-action-button">Xem thêm</button>
+						</div>
+					</div>
+				</a>
+				<a class="card-link" href="detailproduct.html" id="best-seller-5">
+					<div class="card">
+						<div class="card-img">
+							<img src="source/ảnh bìa sản phẩm/582.jpg">
+							<img src="source/ảnh/582/DSC08411.jpg" class="hover-img">
+						</div>
+						<div class="card-more_imgs">
+							<img src="source/ảnh/582/DSC08411.jpg">
+							<img src="source/ảnh/582/DSC08406.jpg">
+							<img src="source/ảnh/582/DSC08445 no.jpg">
+						</div>
+						<div class="card-catalog">
+							<h5>COMBAT BOOTS</h5>
+						</div>
+						<div class="card-product_title">
+							<h2>GUZA</h2>
+						</div>
+						<div class="card-price">
+							<h3>599.000 đ</h3>
+						</div>
+						<div class="card-action">
+							<button class="card-action-button">Xem thêm</button>
+						</div>
+					</div>
+				</a>
+				<a class="card-link" href="detailproduct.html" id="best-seller-6">
+					<div class="card">
+						<div class="card-img">
+							<img src="source/ảnh bìa sản phẩm/Derby.jpg">
+							<img src="source/ảnh/mới/DSC08415.jpg" class="hover-img">
+						</div>
+						<div class="card-more_imgs">
+							<img src="source/ảnh/mới/DSC08417.jpg">
+							<img src="source/ảnh/mới/DSC08423.jpg">
+							<img src="source/ảnh/mới/DSC08430.jpg">
+						</div>
+						<div class="card-catalog">
+							<h5>COMBAT BOOTS</h5>
+						</div>
+						<div class="card-product_title">
+							<h2>ĐẾ CHUNKY</h2>
+						</div>
+						<div class="card-price">
+							<h3>799.000 đ</h3>
+						</div>
+						<div class="card-action">
+							<button class="card-action-button">Xem thêm</button>
+						</div>
+					</div>
+				</a>
+				<a class="card-link" href="detailproduct.html" id="best-seller-7">
+					<div class="card">
+						<div class="card-img">
+							<img src="source/ảnh bìa sản phẩm/Loafer.jpg">
+							<img src="source/ảnh/Loafer/DSC00733.jpg" class="hover-img">
+						</div>
+						<div class="card-more_imgs">
+							<img src="source/ảnh/Loafer/DSC00735.jpg">
+							<img src="source/ảnh/Loafer/DSC00745.jpg">
+							<img src="source/ảnh/Loafer/DSC00748.jpg">
+						</div>
+						<div class="card-catalog">
+							<h5>OFFICE SHOES</h5>
+						</div>
+						<div class="card-product_title">
+							<h2>LOAFER</h2>
+						</div>
+						<div class="card-price">
+							<h3>589.000 đ</h3>
+						</div>
+						<div class="card-action">
+							<button class="card-action-button">Xem thêm</button>
+						</div>
+					</div>
+				</a>
+				<a class="card-link" href="detailproduct.html" id="best-seller-8">
+					<div class="card">
+						<div class="card-img">
+							<img src="source/ảnh bìa sản phẩm/Sneaker.png">
+							<img src="source/ảnh/Sneaker/DSC03033.jpg" class="hover-img">
+						</div>
+						<div class="card-more_imgs">
+							<img src="source/ảnh/Sneaker/DSC03047.jpg">
+							<img src="source/ảnh/Sneaker/DSC03054.jpg">
+							<img src="source/ảnh/Sneaker/DSC03063.jpg">
+						</div>
+						<div class="card-catalog">
+							<h5>SNEAKER</h5>
+						</div>
+						<div class="card-product_title">
+							<h2>CỔ CAO</h2>
+						</div>
+						<div class="card-price">
+							<h3>555.000 đ</h3>
+						</div>
+						<div class="card-action">
+							<button class="card-action-button">Xem thêm</button>
+						</div>
+					</div>
+				</a>
+			</div>
+			<a href="" style="width: 30%;" class="btn-xem_them_1">XEM THÊM
+				<i class="fa fa-angle-down" data-toggle="dropdown"></i>
+			</a>
+		</section>
+
+		<!------------Tin tức------------->
+		<section id="section-news">
+			<h1><a href="">TIN TỨC G2 STORE</a></h1>
+			<div class="news-container">
+				<div class="news">
+					<div class="news-img">
+						<img src="source/news-1.jpg">
+					</div>
+					<h5 class="news-heading">Nhà tài trợ chính thức cho sự kiện Thời trang Biluxury</h5>
+					<p class="news-short_content">Với G2 chúng tôi, luôn luôn sẵn sàng chào đón, hợp tác với các doanh
+						nghiệp với thông điệp: ”Hợp tác cùng nhau, phát triển cùng nhau”...</p>
+				</div>
+				<div class="news">
+					<div class="news-img">
+						<img src="source/news-2.jpg">
+					</div>
+					<h5 class="news-heading">Chính thức ra mắt cuốn sách “Gã mê giày”</h5>
+					<p class="news-short_content">Tựa của cuốn sách “Gã mê giày” chính là những điều anh muốn gửi gắm
+						tới người đọc. Từ một dân kỹ thuật chính hiệu vì tình yêu với đôi giày da mà anh quyết tâm dấn
+						thân vào kinh doanh...</p>
+				</div>
+				<div class="news">
+					<div class="news-img">
+						<img src="source/news-3.jpg">
+					</div>
+					<h5 class="news-heading">Thắt dây giày đơn giản với hai cách phổ biến sau</h5>
+					<p class="news-short_content">Những tiểu tiết nhỏ sẽ giúp thể hiện sự tinh tế của một người đàn ông.
+						Và để có thể mang một đôi giày thì việc thắt dây giày đúng cách là điều quan trọng nhất...</p>
+				</div>
+				<div class="news">
+					<div class="news-img">
+						<img src="source/news-4.jpg">
+					</div>
+					<h5 class="news-heading">G2 STORE - Dòng Sneaker đầu tiên chính thức ra mắt</h5>
+					<p class="news-short_content">Hẳn ai cũng biết đến G2 STORE là một thương hiệu giày da Việt Nam.
+						Được thiết kế và sản xuất tại Việt Nam, G2 STORE chính thức bước vào thị trường giày da ...</p>
+				</div>
+			</div>
+			<a href="" style="width: 30%;" class="btn-xem_them_1">XEM THÊM
+				<i class="fa fa-angle-down" data-toggle="dropdown"></i>
+			</a>
+		</section>
+
+	
+
+	<!------------FOOTER------------->
+
+	<footer class="bg-footer">
+		<div class="site-footer">
+			<div class="container_footer">
+				<div class="footer-inner">
+					<div class="row">
+						<div class="footer-column">
+							<div style="justify-content: center; margin: auto;">
+								<a href="index.html" , style="margin: 80px;">
+									<img src="source/G2_logo.png" style="max-width: 88px; margin: auto;">
+								</a>
+							</div>
+							<ul class="first-column">
+								<li>
+									<a href="">
+										<span class="material-symbols-sharp">location_on</span>
+										Hệ thống cửa hàng | G2 Store
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<span class="material-symbols-outlined">phone_forwarded</span>
+										0926111220
+									</a>
+								</li>
+								<li>
+									<a title="Liên hệ G2 Store qua Email" target="_blank" href="">
+										<span class="material-symbols-outlined">mail</span>
+										g2esport@gmail.com
+									</a>
+								</li>
+								<li>
+									@ Copyright 2024 - <a href="index.html" title="G2 Store">Design by Huhi</a>
+								</li>
+								<li>
+									<a href="" title="Fanpage G2 Store" target="_blank">
+										<img src="source/social_network.png">
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-column">
+							<div class="top-footer">HƯỚNG DẪN</div>
+							<ul class="list-footer">
+								<li>
+									<a href="">Hướng dẫn mua hàng</a>
+								</li>
+								<li>
+									<a href="">Giao nhận và thanh toán</a>
+								</li>
+								<li>
+									<a href="">Đổi trả bảo hành</a>
+								</li>
+								<li>
+									<a href="">Đăng ký thành viên</a>
+								</li>
+								<li>
+									<a href="">Tra cứu đơn hàng</a>
+								</li>
+							</ul>
+							<a class="approved">
+								<img src="https://bizweb.dktcdn.net/100/292/624/themes/758446/assets/bct.png?1671629752759"
+									style="max-width: 70%">
+							</a>
+						</div>
+						<div class="footer-column">
+							<div class="top-footer">CHÍNH SÁCH</div>
+							<ul class="list-footer">
+								<li>
+									<a href="">Chính sách đổi hàng</a>
+								</li>
+								<li>
+									<a href="">Chính sách bảo hành</a>
+								</li>
+								<li>
+									<a href="">Chính sách thanh toán</a>
+								</li>
+								<li>
+									<a href="">Chính sách bảo mật</a>
+								</li>
+								<li>
+									<a href="">Hệ thống tích điểm</a>
+								</li>
+								<li>
+									<a href="">Hình thức vận chuyển</a>
+								</li>
+
+							</ul>
+						</div>
+						<div class="footer-column">
+							<div class="top-footer">NHẬN KHUYẾN MÃI</div>
+							<p>Để lại Email của bạn</p>
+							<div class="email-footer">
+								<span>
+									<input style="height: 33px; padding-left: 8px; outline: none; border: none;
+							font-size: 12px; background-color: #FFFFFF ;" type="text" placeholder="Nhập Email của bạn">
+								</span>
+								<button href="#" class="mail-btn">GỬI</button>
+								<div style="font-family: sans-serif; font-style: italic; 
+								font-size: 10px; position: absolute; display: none;">
+									Đã gửi Email, vui lòng đợi xác nhận!
+								</div>
+							</div>
+							<div style="padding-bottom: 15px; border-bottom: 0.1px solid #BABABA;
+						font-weight: 300;">PHƯƠNG THỨC THANH TOÁN</div>
+							<img src="source/image 5.png" style="margin-top: 26px;">
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Đăng nhập | G2 Store</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/Login-style.css">
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="website icon" type="png" href="source/G2_logo.png">
+</head>
+<body>
+<!------------HEADER------------->
+
+<header>
+    <div class="container">
+        <div class="hotline">
+            <span>HOTLINE:</span>
+            <a href="">0926111220</a>
+        </div>
+        <div class="header-logo">
+            <a href="index.html">
+				<img src="source/G2_logo.png" alt="">
+			</a>
+        </div>
+        <div class="header-left">
+			<ul>
+				<li>
+					<a href="login.html" title="Tài khoản">
+						Tài khoản
+						<span 
+						class="material-symbols-sharp">
+						person </span> 
+					</a>
+					<ul>
+						<li>
+							<a href="login.html">Đăng nhập</a>
+						</li>
+						<li>
+							<a href="RegisterAccount.html">Đăng ký</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="cart.html" title="Giỏ hàng">Giỏ hàng 
+						<span class="material-symbols-outlined">
+						shopping_cart </span>
+					</a>
+					<ul>
+						<li>
+							<a href="">GIỎ HÀNG CỦA BẠN ĐANG TRỐNG</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="listproduct.html" title="Mở trang tìm kiếm sản phẩm">
+						<span class="material-symbols-outlined search-icon">
+							search
+						</span>
+					</a>
+				</li>
+			</ul>
+        </div>
+    </div>
+    <nav class="container_nav">
+        <ul>
+            <li title="Trang chủ">
+				<a href="index.html" title="Trang chủ">Trang chủ</a>
+			</li>
+            <li title="Chelsea Boots">
+				<a href="listproduct.html" class="nav-link" title="Chelsea boots">Chelsea boots 
+					<i class="fa fa-angle-down" data-toggle="dropdown"></i>
+				</a>
+				<ul>
+					<li>
+						<a href="">GLV</a>
+					</li>
+					<li>
+						<a href="">MANZA</a>
+					</li>
+					<li>
+						<a href="">LUCA</a>
+					</li>
+				</ul>
+            </li>
+            <li title="Combat Boots">
+                <a href="listproduct.html" title="Combat boots">Combat boots
+					<i class="fa fa-angle-down" data-toggle="dropdown"></i>
+				</a>
+				<ul>
+					<li>
+						<a href="">ĐẾ CHUNKY</a>
+					</li>
+					<li>
+						<a href="">Da mềm</a>
+					</li>
+					<li>
+						<a href="">Guza</a>
+					</li>
+					<li>
+						<a href="">Botas</a>
+					</li>
+				</ul>
+            </li>
+            <li title="Office Shoes">
+                <a href="listproduct.html" title="Office shoes">Office shoes
+					<i class="fa fa-angle-down" data-toggle="dropdown"></i>
+				</a>
+				<ul>
+					<li>
+						<a href="">LOAFER</a>
+					</li>
+					<li>
+						<a href="">CHUNKY</a>
+					</li>
+					<li>
+						<a href="">DERBY</a>
+					</li>
+				</ul>
+            </li>
+            <li title="Sneaker">
+                <a href="listproduct.html" title="Sneaker">Sneaker</a>
+            </li>
+			<li title="Cửa hàng">
+                <a href="" title="Cửa hàng">Cửa hàng</a>
+            </li>
+			<li title="Blog">
+                <a href="" title="Blog">Blog</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!------------CONTENT------------->
+<section class="dang-nhap">
+<div class="login">
+    <h1 class="title-head text-center">ĐĂNG NHẬP TÀI KHOẢN</h1>
+    <div class="social_logo">
+        <div class="social_logo_facebook">
+			<a href="">
+				<img width="129px" height="37px" alt="facebook-login-button" src="https://bizweb.dktcdn.net/assets/admin/images/login/fb-btn.svg">
+			</a>
+        </div>
+        <div class="social_logo_google">
+			<a href="">
+				<img width="129px" height="37px" alt="google-login-button" src="//bizweb.dktcdn.net/assets/admin/images/login/gp-btn.svg">
+			</a>
+        </div>
+    </div>
+
+</div>
+<div class="input-dangnhap">
+    <div class="col-md-12">
+        <fieldset class="form-group">
+            <label>Email / Số Điện Thoại<span class="required">*</span></label>
+            <input placeholder="Nhập Địa chỉ Email / Số Điện Thoại" type="email" class="form-control form-control-lg" data-validation="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" data-validation-error-msg="Email sai định dạng" value="" name="email"
+                id="email" required="">
+        </fieldset>
+    </div>
+    <div class="col-md-12">
+        <fieldset class="form-group">
+            <label>Mật khẩu<span class="required">*</span></label>
+            <input placeholder="Nhập Mật khẩu" type="password" class="form-control form-control-lg" value="" name="password" id="password" required="" data-validation-error-msg="Không được để trống" data-validation="required">
+        </fieldset>
+    </div>
+
+</div>
+<div class="pull-xs-left text-center" style="margin-top: 15px;">
+    <button class="btn btn-style btn-blues" type="submit" value="Đăng nhập">ĐĂNG NHẬP</button>
+</div>
+<p class="text-center">
+    <a href="" class="btn-link-style" onclick="showRecoverPasswordForm();" title="Quên mật khẩu?">Quên mật khẩu?</a>
+</p>
+<div class="text-login text-center">
+    <p>
+        Bạn chưa có tài khoản. Đăng ký
+        <a href="RegisterAccount.html" title="Đăng ký">tại đây.</a>
+    </p>
+</div>
+</section>
+<!------------FOOTER------------->
+
+<footer class="bg-footer">
+	<div class="site-footer">
+		<div class="container_footer">
+			<div class="footer-inner">
+				<div class="row">
+					<div class="footer-column">
+						<div style="justify-content: center; margin: auto;">
+							<a href="index.html", style="margin: 80px;">
+								<img src="source/G2_logo.png" style="max-width: 88px; margin: auto;">
+							</a>
+						</div>
+						<ul class="first-column">
+							<li>
+								<a href="">
+									<span class="material-symbols-sharp">location_on</span>
+									Hệ thống cửa hàng | G2 Store
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class="material-symbols-outlined">phone_forwarded</span>
+									0926111220
+								</a>
+							</li>
+							<li>
+								<a title="Liên hệ G2 Store qua Email" target="_blank" href="">
+									<span class="material-symbols-outlined">mail</span>
+									g2esport@gmail.com
+								</a>
+							</li>
+							<li>
+								@ Copyright 2024 - <a href="index.html" title="G2 Store" >Design by Huhi</a>
+							</li>
+							<li>
+								<a href="" title="Fanpage G2 Store" target="_blank">
+									<img src="source/social_network.png">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-column">
+						<div class="top-footer">HƯỚNG DẪN</div>
+						<ul class="list-footer">
+							<li>
+								<a href="">Hướng dẫn mua hàng</a>
+							</li>
+							<li>
+								<a href="">Giao nhận và thanh toán</a>
+							</li>
+							<li>
+								<a href="">Đổi trả bảo hành</a>
+							</li>
+							<li>
+								<a href="">Đăng ký thành viên</a>
+							</li>
+							<li>
+								<a href="">Tra cứu đơn hàng</a>
+							</li>
+						</ul>
+						<a class="approved">
+							<img src="https://bizweb.dktcdn.net/100/292/624/themes/758446/assets/bct.png?1671629752759" style="max-width: 70%">
+						</a>
+					</div>
+					<div class="footer-column">
+						<div class="top-footer">CHÍNH SÁCH</div>
+						<ul class="list-footer">
+							<li>
+								<a href="">Chính sách đổi hàng</a>
+							</li>
+							<li>
+								<a href="">Chính sách bảo hành</a>
+							</li>
+							<li>
+								<a href="">Chính sách thanh toán</a>
+							</li>
+							<li>
+								<a href="">Chính sách bảo mật</a>
+							</li>
+							<li>
+								<a href="">Hệ thống tích điểm</a>
+							</li>
+							<li>
+								<a href="">Hình thức vận chuyển</a>
+							</li>
+		
+						</ul>
+					</div>
+					<div class="footer-column">
+						<div class="top-footer">NHẬN KHUYẾN MÃI</div>
+						<p>Để lại Email của bạn</p>
+						<div class="email-footer">
+							<span>
+								<input style="height: 33px; padding-left: 8px; outline: none; border: none;
+							font-size: 12px; background-color: #FFFFFF ;" 
+							type="text" placeholder="Nhập Email của bạn"> 
+							</span>
+							<button href="#" class="mail-btn">GỬI</button>
+							<div style="font-family: sans-serif; font-style: italic; 
+								font-size: 10px; position: absolute; display: none;">
+								Đã gửi Email, vui lòng đợi xác nhận!
+							</div>
+						</div>
+						<div style="padding-bottom: 15px; border-bottom: 0.1px solid #BABABA;
+						font-weight: 300;">PHƯƠNG THỨC THANH TOÁN</div>
+						<img src="source/image 5.png" style="margin-top: 26px;">
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+</footer>
+
+</body>
+</html>
